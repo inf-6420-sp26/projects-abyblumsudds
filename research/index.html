@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Aby Blum Sudds">
+        <meta name="description" content="Web page analysis research paper">
+        <meta name="keywords" content="research paper, web page analysis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Project 2.1 - Research Paper</title>
+        
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body>
+        <header class="container">
+            <h1>Project 2.1 - Research Paper</h1>
+            <p><em>Aby Blum Sudds</em></p>
+            <nav>
+                <ul>
+                    <li><a href="#page">Page Selection</a></li>
+                    <li><a href="#sections">Major Sections</a></li>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                    <li><a href="#validation">Validation</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="page">
+                <h2>Page Selection: Bachelor of Arts in Sociology Program Page</h2>
+                <p><a href="https://clas.wayne.edu/sociology/undergrad/ba">https://clas.wayne.edu/sociology/undergrad/ba</a></p>
+                <p>I selected this page to examine primarily because my undergraduate degree is in Sociology and Social Thought. Additionally, this page met all of the requirements: a clear header and footer, a navigation area, a main content area, an image, multiple lists, and three heading levels. It even has a table for me to examine.</p>
+            </section>
+
+            <section id="sections">
+                <h2>Major Sections</h2>
+
+                <h3>Site Header</h3>
+                <img src="images/Screenshot-Soc-Header.png" alt="Wayne State BA Sociology Program Header">
+                <p>For this section I would use the <code>&lt;header&gt;</code> element, because this is the header for the page. It contains the school name, site navigation, and page name. Sectioning these things off together inside the <code>&lt;header&gt;</code> element makes it possible to style this section separately from the main content of the page.</p>
+                
+                <h3>Main Navigation</h3>
+                <img src="images/Screenshot-Soc-Nav.png" alt="Wayne State BA Sociology Program Navigation Menu" width="400px">
+                <p>For this section I would use the <code>&lt;nav&gt;</code> element, because it contains the main navigation menu for the page. Using the <code>&lt;nav&gt;</code> element helps distinguish this section for screen readers and search engines.</p>
+                
+                <h3>Main Content</h3>
+                <img src="images/Screenshot-Soc-Body.png" alt="Wayne State BA Sociology Program Main Body Content Example">
+                <p>For this section I would use the <code>&lt;main&gt;</code> element, because it contains the main content of the page. This element helps identify the main content of the page for search engines and screen readers, in addition to helping keep things organized for the developer. As the provided screenshot is only a small sample of the main page content, I might consider using <code>&lt;section&gt;</code> elements to further divide up this section within the <code>&lt;main&gt;</code> element.</p>
+                
+                <h3>Site Footer</h3>
+                <img src="images/Screenshot-Soc-Footer.png" alt="Wayne State BA Sociology Program Footer">
+                <p>For this section I would use the <code>&lt;footer&gt;</code> element, because this is the footer for the page. It contains social and other contact information for the program. As with the header, sectioning these things off together makes it possible to style them separately from the main content of the page.</p>
+            </section>
+
+            <section id="headings">
+                <h2>Headings</h2>
+                <table>
+                    <tr>
+                        <th>Heading Text</th>
+                        <th>Level</th>
+                        <th>Reason</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bachelor of Arts in Sociology</td>
+                        <td><code>&lt;H1&gt;</code></td>
+                        <td>This is the title of the page.</td>
+                     </tr>
+                    
+                     <tr>
+                        <td>Why Wayne State's sociology major?</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This is the first major heading, and represents a section of the page.</td>
+                     </tr>
+
+                     <tr>
+                        <td>What is sociology?</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Learning objectives</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Sociology program requirements and curriculum</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Courses</td>
+                        <td><code>&lt;H3&gt;</code></td>
+                        <td>This is a subsection of the program requirements and curriculum section.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Hands-on sociology research</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content, not another subsection.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Accelerated pathway to a master's degree in sociology</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Sociology bachelor's degree career outlook</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Career insights</td>
+                        <td><code>&lt;H3&gt;</code></td>
+                        <td>This represents a subsection of the degree career outlook section.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Financial aid and tuition</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content, not another subsection.</td>
+                     </tr>
+
+                     <tr>
+                        <td>Learn more about Wayne State University's sociology major</td>
+                        <td><code>&lt;H2&gt;</code></td>
+                        <td>This represents another section of the page content.</td>
+                     </tr>
+                </table>
+            </section>
+
+            <section id="lists">
+                <h2>Lists</h2>
+                <p>This page contains a number of lists with different information about the program. All of the lists on this page are unordered lists, because the information in them does not need to be in a particular order. My first example is the main navigation menu:</p>
+                <img src="images/Screenshot-Soc-Nav.png" alt="Wayne State BA Sociology Program Navigation Menu" width="400px">
+                <p>This navigation menu uses nested <code>&lt;ul&gt;</code> elements to create the nested menu of links that are not numbered.</p>
+                <img src="images/Screenshot-Unordered-List.png" alt="Unordered list of courses offered" width="400px">
+                <p>My second example of a list is this plain text list of courses offered within the Sociology program. This list would also use the <code>&lt;ul&gt;</code> element, because it is not numbered or in a necessary order.</p>
+            </section>
+
+            <section id="links">
+                <h2>Links</h2>
+                <h3>Internal Links</h3>
+                <p>Examples of internal links:
+                    <ul>
+                        <li>Request info: <code>&lt;a href="/sociology/admissions/request-info"&gt;</code></li>
+                        <li>See an advisor: <code>&lt;a href="/sociology/students/advising"&gt;</code></li>
+                        <li>Accelerated Graduate Enrollment (AGRADE): <code>&lt;a href="/sociology/undergrad/agrade"&gt;</code></li>
+                    </ul>
+                </p>
+                <h3>External Links</h3>
+                <p>Examples of external links:
+                    <ul>
+                        <li>Climate change policy analyst: <code>&lt;a href="https://www.onetonline.org/link/summary/19-2041.01" target="_blank"&gt;</code></li>
+                        <li>Instagram icon: <code>&lt;a href="https://instagram.com/wsusociology" target="_blank"&gt;</code></li>
+                        <li>LinkedIn icon: <code>&lt;a href="https://linkedin.com/school/WayneStateCLAS" target="_blank"&gt;</code></li>
+                    </ul>
+                </p>
+                <p>I would expect all of these links to open in a new window or tab, because they all include the <code>target="_blank"</code> attribute in the <code>&lt;a&gt;</code> element.</p>
+                <p>The page does not use any visual indicator to distinguish external links for the user.</p>
+            </section>
+
+            <section id="tables">
+                <h2>Tables</h2>
+                <img src="images/Screenshot-Table.png" alt="Table of sociology careers and median income" width="400px">
+                <p>This table shows some of the careers one might go into with a BA in Sociology, and their median salaries. The table uses <code>&lt;th&gt;</code> header cells to label the columns. I think the table structure makes sense for this content, because it makes it easy to read the data.</p>
+            </section>
+
+            <section id="Accessibility">
+                <h2>Accessibility</h2>
+                <img src="images/Wave-Results.png" alt="Wave results showing zero errors" width="400px">
+                <p>The results of the Wave analysis was an AIM score of 9.9 (out of 10), with zero errors and three alerts. Of the three alerts, two were the inclusion of the <code>&lt;noscript&gt;</code> element, and one was the inclusion of a YouTube video.</p>
+                <p>The WAVE report notes that the content contained in the <code>&lt;noscript&gt;</code> element will only be shown if a user has JavaScript disabled, and that that doesn't happen very often.</p>
+                <p>The YouTube video seems to be the area where the page developer could make the biggest accessibility impact. Although the video has closed captioning, the captions are auto-generated by YouTube. The WAVE report notes that auto-generated captions "are typically not of sufficient quality to be considered equivalent" to the necessary synchronized captioning. The developer, therefore, could make an improvement here by adding higher-quality (manual) captioning to the video on YouTube.</p>
+                <p>The image on this page does not appear to have an <code>alt</code> description. Although this information does not appear in the WAVE report, an inspection of the page code reveals that the image is actually the background image of a <code>&lt;div&gt;</code> element. Because this image is purely decorative, a text alternative is not required by accessibility standards, and screen readers can safely skip it without missing context.</p>
+                <p><a href="https://wave.webaim.org/report#/https://clas.wayne.edu/sociology/undergrad/ba" target="_blank">View WAVE analysis results</a></p>
+            </section>
+
+            <section id="validation">
+                <h2>Validation</h2>
+                <img src="images/Validator-Results.png" alt="W3C HTML Validator results showing info, warnings, and errors on the page">
+                <p>The WC3 HTML Validation results show three errors, two warnings, and five info notifications.</p>
+                <p>One error shows that an <code>&lt;a&gt;</code> element is missing the <code>href</code> property. This means that the <code>&lt;a&gt;</code> element has been used as a placeholder rather than an actual link. W3C outlines this as an <a href="https://www.w3.org/TR/2011/WD-html5-author-20110809/the-a-element.html" target="_blank">acceptable use of the <code>&lt;a&gt;</code> element</a>. However, if the developer wanted to fix this error on the report, I suppose they could do so by utilizing an alternative element to create a placeholder there, such as the<code>&lt;span&gt;</code> element. Whether this would work will depend on the context, or why a placeholder is necessary in that specific instance (which I am unsure of).</p>
+                <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fclas.wayne.edu%2Fsociology%2Fundergrad%2Fba&checkerrorpages=yes" target="_blank">View W3C Validation report</a></p>
+            </section>
+
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>Overall, I think this page is well-structured and designed with accessibility in mind. It's content sections are clearly defined visually and through semantic elements, and the content is thoughtfully organized using headers, lists, and a table. The biggest issue I found was probably the accessibility issue with the YouTube video. Although the video contains auto-generated captions, accessibility could be improved by adding better captions to the video.</p>
+            </section>
+        </main>
+
+        <footer class="container">
+            <p>&copy;2026 | Aby Blum Sudds</p>
+        </footer>
+    </body>
+</html>
