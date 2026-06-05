@@ -48,12 +48,12 @@ nav ul {
 }
 
 a, a:visited {
-    color: #ff69b4;
+    color: teal;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: black;
+    color: rgb(1, 194, 194);
     text-decoration: underline;
     outline: none;
 }
@@ -66,11 +66,11 @@ nav a {
 }
 
 nav a:visited {
-    color: white;
+    color: rgb(0, 241, 241);
 }
 
 nav a:hover, a:focus {
-    color: #ff69b4;
+    color: rgb(0, 241, 241);
     text-decoration: underline;
     outline: none;
 }
@@ -88,7 +88,7 @@ img {
 
 code {
   font-family: Consolas,"courier new";
-  color: #7a306c;
+  color: crimson;
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 105%;
