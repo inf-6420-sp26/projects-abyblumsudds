@@ -47,6 +47,17 @@ nav ul {
     }
 }
 
+a, a:visited {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: underline;
+    outline: none;
+}
+
 nav a {
   display: block;
   padding: 14px 16px;
