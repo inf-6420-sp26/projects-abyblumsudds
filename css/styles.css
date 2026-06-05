@@ -54,6 +54,16 @@ nav a {
   color: white;
 }
 
+nav a:visited {
+    color: white;
+}
+
+nav a:hover, a:focus {
+    color: #ff69b4;
+    text-decoration: underline;
+    outline: none;
+}
+
 section {
     background-color: white;
     border-radius: 10px;
