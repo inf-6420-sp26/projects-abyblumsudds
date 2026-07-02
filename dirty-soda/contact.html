@@ -17,7 +17,8 @@
 <body>
     <header>
         <div class="container title">
-            <h1>How to Make a Dirty Soda</h1>
+            <img src="images/Dirty Soda.png" alt="Orange dirty soda illustration" id="soda">
+            <h2>Dirty Soda Lab</h2>
             <img src="images/Dirty Soda.png" alt="Orange dirty soda illustration" id="soda">
         </div>
         <nav class="navbar">
@@ -33,7 +34,7 @@
 
     <main class="container">
         <section class="sec1">
-            <h2>Questions or Comments?</h2>
+            <h1>Contact Me About Dirty Sodas</h1>
             <p>If you have questions or comments about dirty sodas, just fill out the form below, and I'll get back to
                 you as soon as I can!</p>
         </section>
@@ -51,8 +52,17 @@
                 </div>
 
                 <div>
+                    <label for="reason">What brings you to the lab today?</label>
+                    <select id="reason" name="reason">
+                        <option value="recipe">I have a new recipe idea for you!</option>
+                        <option value="feedback">I tried one of your recipes and have thoughts...</option>
+                        <option value="hello">Just wanted to say hi!</option>
+                    </select>
+                </div>
+
+                <div>
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" placeholder="Type your message here!"></textarea>
+                    <textarea name="message" id="message" placeholder="Type your message here!" required></textarea>
                 </div>
 
                 <div>

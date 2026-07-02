@@ -20,7 +20,7 @@ body {
     padding: 0 20px;
 }
 
-/* Headings & Links */
+/* Headings, Links, Images */
 
 h1,
 h2,
@@ -66,6 +66,12 @@ a.current {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header Section (title & nav) */
 
 header {
@@ -77,16 +83,14 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    & h2 {
+        margin-bottom: 0;
+    }
 }
 
 #soda {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
@@ -218,20 +222,18 @@ label {
     margin-bottom: .25em;
 }
 
-input {
+input,
+select,
+textarea {
     width: 100%;
+    font-family: inherit;
     font-size: inherit;
     padding: .4em;
     margin-bottom: .5em;
 }
 
 textarea {
-    width: 100%;
-    padding: .4em;
-    margin-bottom: .5em;
     height: 5em;
-    font-family: inherit;
-    font-size: inherit;
 }
 
 button {
@@ -266,11 +268,6 @@ footer {
 /* Transform for screens smaller than 760px */
 
 @media only screen and (max-width: 760px) {
-    .title {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar {
         position: relative;
         background-color: #FFFDF9;
@@ -324,6 +321,18 @@ footer {
     h2,
     h3 {
         text-align: center;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 125%;
     }
 
     main {
