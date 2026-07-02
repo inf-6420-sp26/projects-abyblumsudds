@@ -20,6 +20,8 @@ body {
     padding: 0 20px;
 }
 
+/* Headings & Links */
+
 h1,
 h2,
 h3,
@@ -59,6 +61,13 @@ a:focus {
     outline: none;
 }
 
+a.current {
+    color: #2B2D42;
+    text-decoration: none;
+}
+
+/* Header Section (title & nav) */
+
 header {
     box-shadow: 0 4px 6px -1px rgba(43, 45, 66, 0.05);
 }
@@ -81,29 +90,44 @@ img {
     height: auto;
 }
 
-nav {
+.navbar {
     padding: 6px;
     margin-bottom: 16px;
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    & a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    & a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
+
+    & a.current {
+        text-decoration: none;
+    }
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: auto;
-    flex-wrap: wrap;
+#checkbox-toggle {
+    display: none;
 }
 
-nav a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/* Main Content (sec1, sec2, sec3) */
 
 main {
     display: grid;
@@ -127,31 +151,67 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+
+
+    & dl,
+    ul {
+        margin-left: 30px;
+    }
+
+    & dl dt {
+        font-weight: bold;
+    }
+
+    & dl dd,
+    ul {
+        margin-bottom: 20px;
+    }
+
+    & ol {
+        margin-left: 50px;
+    }
+
+    & ol li::marker {
+        color: #FF6B6B;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 }
 
-.sec2 dl,
-ul {
-    margin-left: 30px;
+.sec3 {
+    grid-area: sec3;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    flex-wrap: wrap;
+
+
+    & h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    & div {
+        background-color: #FFD166;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+    }
 }
 
-.sec2 dl dt {
-    font-weight: bold;
-}
-
-.sec2 dl dd,
-ul {
-    margin-bottom: 20px;
-}
-
-.sec2 ol {
-    margin-left: 50px;
-}
-
-.sec2 ol li::marker {
-    color: #FF6B6B;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+/* Form */
 
 label {
     display: block;
@@ -193,49 +253,77 @@ button {
     border-radius: 5px;
 }
 
-.sec3 {
-    grid-area: sec3;
-    display: flex;
-    justify-content: baseline;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    width: auto;
-    flex-wrap: wrap;
-}
-
-.sec3 h2 {
-    width: 100%;
-    text-align: center;
-}
-
-.sec3 div {
-    background-color: #FFD166;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    width: 90%;
-    text-align: center;
-}
-
-.sec3 ul {
-    list-style: none;
-    margin: 0;
-}
+/* Footer Section */
 
 footer {
     background-color: #2B2D42;
     color: #FFFFFF;
     padding: 20px;
     text-align: center;
+    font-size: 75%;
 }
+
+/* Transform for screens smaller than 760px */
 
 @media only screen and (max-width: 760px) {
     .title {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar {
+        position: relative;
+        background-color: #FFFDF9;
+
+        & a {
+            display: block;
+            text-align: center;
+            padding: .25em 1em;
+            margin: .25em;
+        }
+
+        & ul {
+            display: none;
+            align-items: center;
+            width: 100%;
+        }
+
+        li {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        display: none;
+        background-color: #FFF0F0;
+    }
+
+    .menu-btn {
+        display: block;
+        padding: .25em 1em;
+        text-align: center;
+        color: #FF6B6B;
+    }
+
+    .menu-btn::after {
+        content: "\2630";
+        font-size: 150%;
+    }
+
+    #checkbox-toggle:checked~.menu {
+        display: block;
+    }
+
+    #checkbox-toggle:checked~.menu-btn::after {
+        content: "\2716";
+    }
+
+    h2,
+    h3 {
+        text-align: center;
     }
 
     main {
@@ -261,10 +349,5 @@ footer {
 
     .sec3 img {
         display: none;
-    }
-
-    h2,
-    h3 {
-        text-align: center;
     }
 }

@@ -20,11 +20,13 @@
             <h1>How to Make a Dirty Soda</h1>
             <img src="images/Dirty Soda.png" alt="Orange dirty soda illustration" id="soda">
         </div>
-        <nav class="container">
-            <ul>
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="menu">
                 <li><a href="index.html">How To</a></li>
                 <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="current">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -40,21 +42,21 @@
             <form action="" method="post">
                 <div>
                     <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" placeholder="Cherry Sweetfoam" required>
                 </div>
 
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="cherry@sweetfoam.com" required>
                 </div>
 
                 <div>
                     <label for="message">Message:</label>
-                    <textarea id="message"></textarea>
+                    <textarea name="message" id="message" placeholder="Type your message here!"></textarea>
                 </div>
 
                 <div>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send</button>
                     <button type="reset">Reset</button>
                 </div>
             </form>
