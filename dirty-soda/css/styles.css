@@ -251,6 +251,8 @@ button:hover {
 }
 
 input,
+select,
+textarea,
 button {
     border-radius: 5px;
 }
@@ -268,9 +270,27 @@ footer {
 /* Transform for screens smaller than 760px */
 
 @media only screen and (max-width: 760px) {
-    .navbar {
+    header {
+        display: flex;
         position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .navbar {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         background-color: #FFFDF9;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
 
         & a {
             display: block;
@@ -292,17 +312,24 @@ footer {
     }
 
     .menu {
-        position: absolute;
-        left: 0;
+        width: max-content;
+        min-width: 200px;
+        position: fixed;
+        left: auto;
+        right: 0;
         display: none;
         background-color: #FFF0F0;
     }
 
     .menu-btn {
-        display: block;
-        padding: .25em 1em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 8px 12px;
         text-align: center;
-        color: #FF6B6B;
+        color: #2B2D42;
+        width: auto;
+        cursor: pointer;
     }
 
     .menu-btn::after {
@@ -325,6 +352,8 @@ footer {
 
     h1 {
         font-size: 200%;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     h2 {
