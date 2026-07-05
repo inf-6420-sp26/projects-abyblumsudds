@@ -84,12 +84,12 @@ header {
     justify-content: center;
     gap: 10px;
 
-    & h2 {
+    h2 {
         margin-bottom: 0;
     }
 }
 
-#soda {
+.soda {
     width: 60px;
     height: auto;
 }
@@ -98,7 +98,7 @@ header {
     padding: 6px;
     margin-bottom: 16px;
 
-    & ul {
+    ul {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -111,18 +111,18 @@ header {
         flex-wrap: wrap;
     }
 
-    & a {
+    a {
         display: block;
         padding: 14px 16px;
         text-decoration: none;
     }
 
-    & a:hover,
+    a:hover,
     a:focus {
         text-decoration: underline;
     }
 
-    & a.current {
+    a.current {
         text-decoration: none;
     }
 }
@@ -157,25 +157,25 @@ main {
     margin-bottom: 20px;
 
 
-    & dl,
+    dl,
     ul {
         margin-left: 30px;
     }
 
-    & dl dt {
+    dl dt {
         font-weight: bold;
     }
 
-    & dl dd,
+    dl dd,
     ul {
         margin-bottom: 20px;
     }
 
-    & ol {
+    ol {
         margin-left: 50px;
     }
 
-    & ol li::marker {
+    ol li::marker {
         color: #FF6B6B;
         font-weight: bold;
         font-size: 1.2rem;
@@ -185,9 +185,8 @@ main {
 .sec3 {
     grid-area: sec3;
     display: flex;
-    justify-content: baseline;
+    justify-content: start;
     flex-direction: column;
-    justify-content: top;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -195,12 +194,12 @@ main {
     flex-wrap: wrap;
 
 
-    & h2 {
+    h2 {
         width: 100%;
         text-align: center;
     }
 
-    & div {
+    div {
         background-color: #FFD166;
         border-radius: 10px;
         padding: 20px;
@@ -209,7 +208,7 @@ main {
         text-align: center;
     }
 
-    & ul {
+    ul {
         list-style: none;
         margin: 0;
     }
@@ -292,14 +291,14 @@ footer {
         padding-top: 0;
         padding-bottom: 0;
 
-        & a {
+        a {
             display: block;
             text-align: center;
             padding: .25em 1em;
             margin: .25em;
         }
 
-        & ul {
+        ul {
             display: none;
             align-items: center;
             width: 100%;
