@@ -50,7 +50,7 @@ h3 {
 
 a,
 a:visited {
-    color: #FF6B6B;
+    color: #D93838;
     text-decoration: none;
 }
 
@@ -176,7 +176,7 @@ ul {
 }
 
 .sec2 ol li::marker {
-    color: #FF6B6B;
+    color: #D93838;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -239,12 +239,12 @@ button {
     width: 8em;
     padding: .5em;
     color: #FFFFFF;
-    background-color: #FF6B6B;
+    background-color: #D93838;
 }
 
 button:hover {
     color: #FFFFFF;
-    background-color: #E55555;
+    background-color: #B32525;
 }
 
 input,
