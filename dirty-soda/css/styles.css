@@ -157,6 +157,18 @@ main {
     margin-bottom: 20px;
 }
 
+.sec2 a,
+.sec2 a:visited {
+    color: #2B2D42;
+    text-decoration: underline;
+}
+
+.sec2 a:hover,
+.sec2 a:focus {
+    color: #D93838;
+    text-decoration: underline;
+}
+
 .sec2 dl,
 ul {
     margin-left: 30px;
@@ -315,7 +327,8 @@ footer {
         left: auto;
         right: 0;
         display: none;
-        background-color: #FFF0F0;
+        background-color: #FFFDF9;
+        border: 1px solid #2B2D42;
     }
 
     .menu-btn {
