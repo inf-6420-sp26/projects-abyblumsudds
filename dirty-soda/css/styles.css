@@ -34,6 +34,8 @@ h6 {
 h1 {
     font-size: 300%;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -76,27 +78,34 @@ img {
 
 header {
     box-shadow: 0 4px 6px -1px rgba(43, 45, 66, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
 .title h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
     margin-bottom: 0;
 }
 
-.soda {
+#soda {
     width: 60px;
+    min-width: 20px;
     height: auto;
 }
 
 .navbar {
     padding: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .navbar ul {
@@ -108,14 +117,15 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: auto;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 .navbar a {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navbar a:hover,
@@ -287,28 +297,25 @@ footer {
     font-size: 75%;
 }
 
-/* Transform for screens smaller than 760px */
+/* Transform for screens smaller than 775px */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 775px) {
     header {
         display: flex;
         position: relative;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding: 20px;
-    }
-
-    .title {
-        width: auto;
+        padding: 10px 20px;
     }
 
     .navbar {
-        position: absolute;
+        position: static;
         right: 20px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: none;
         background-color: #FFFDF9;
         margin-bottom: 0;
+        margin-left: auto;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -373,12 +380,14 @@ footer {
 
     h1 {
         font-size: 200%;
-        margin-top: 30px;
-        margin-bottom: 20px;
     }
 
     h2 {
         font-size: 150%;
+    }
+
+    .title h2 {
+        font-size: 125%;
     }
 
     h3 {
