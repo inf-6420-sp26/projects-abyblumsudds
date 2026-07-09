@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 h1 {
@@ -92,7 +92,8 @@ header {
 }
 
 .title h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* The validator didn't like my nested statements, so nothing is nested. */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-size: 150%;
     margin-bottom: 0;
 }
@@ -138,13 +139,15 @@ a:focus {
 }
 
 .sr-only {
+    /* Hide the checkbox toggle label, for screen readers only. */
     position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
     border: 0;
 }
 
