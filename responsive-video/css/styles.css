@@ -44,10 +44,6 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25rem;
-}
-
-h3 {
     font-size: 1.5rem;
 }
 
@@ -226,7 +222,7 @@ a:focus {
     color: #1A1A1A;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba (26, 26, 26, 0.05);
+    box-shadow: 0 4px 12px rgb(26, 26, 26, 0.05);
 }
 
 .video-card:focus-within {
@@ -237,6 +233,11 @@ a:focus {
 .video-card:hover {
     outline: 2px solid #D4A017;
     outline-offset: 4px;
+}
+
+.video-card a {
+    display: block;
+    height: 100%;
 }
 
 .video-card a:focus,
