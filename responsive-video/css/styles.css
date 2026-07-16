@@ -56,11 +56,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #1E3D1A;
-    text-decoration: underline;
-}
-
 a:visited {
     color: #7D4F39;
 }
@@ -69,6 +64,7 @@ a:active {
     color: #803E14
 }
 
+a:hover,
 a:focus {
     outline: 3px solid #D4A017;
     outline-offset: 2px;
@@ -131,11 +127,8 @@ a:has(> #site-title) {
     text-decoration: none;
 }
 
-.navbar a:hover {
-    color: #A3B18A;
-}
-
-.navbar a:focus {
+.navbar a:hover,
+a:focus {
     outline: 3px solid #D4A017;
     outline-offset: 4px;
 }
@@ -227,6 +220,7 @@ a:has(> #site-title) {
 }
 
 .video-card {
+    display: inline-block;
     background-color: #F1E8DA;
     border: 1px solid #D8C7B3;
     color: #1A1A1A;
@@ -240,7 +234,13 @@ a:has(> #site-title) {
     outline-offset: 4px;
 }
 
-.video-card a:focus {
+.video-card:hover {
+    outline: 2px solid #D4A017;
+    outline-offset: 4px;
+}
+
+.video-card a:focus,
+a:hover {
     outline: none;
 }
 
