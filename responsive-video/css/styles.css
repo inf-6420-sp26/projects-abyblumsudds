@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 a {
@@ -279,8 +279,10 @@ a:hover {
 }
 
 .video-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F9F7F2;
-    padding: 15px;
     border-radius: 50%;
     flex-shrink: 0;
     width: 40px;
@@ -288,7 +290,9 @@ a:hover {
 }
 
 .video-icon img {
-    width: 100%;
+    width: 22px;
+    height: auto;
+    display: block;
 }
 
 /* Video Page */
@@ -400,7 +404,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
     .gallery {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .menu-btn {
